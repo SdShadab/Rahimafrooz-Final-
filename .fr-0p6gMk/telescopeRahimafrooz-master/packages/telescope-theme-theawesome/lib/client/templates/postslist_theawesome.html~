@@ -1,0 +1,39 @@
+<template name="postslistTheAwesome">
+ {{> UI.dynamic template=postsListIncoming data=incoming}}
+  <div class="posts-wrapper grid grid-module">
+  
+  <!-- New Stuff here -->
+<div class="abovePosts">
+  <div class="featuredcontent">
+  <h2>Some sample title</h2>
+  <h4>Some sample text Some sample text Some sample text Some sample text Some sample text Some sample text </h4>
+  </div>
+
+  <div class="featuredvideo">
+  <iframe width="560" height="315" src="//www.youtube.com/embed/qXBDr6uNprg" frameborder="0" allowfullscreen=""></iframe>
+  </div>
+
+  <div class="convincingpara"><br>
+  <h3 style="color:#4a4444;text-transform:uppercase;">Difference starts with a thought or an action</h3><br>
+  </div>
+
+  <div class="submitbutton">
+        <a href="/submit">{{i18n "SHARE YOUR STORY"}}</a>
+  </div>
+
+   <div id="categories">
+     <a href="/best">{{i18n "TOP"}}</a>
+    <a href="/new">{{i18n "NEW"}}</a>
+  </div>
+
+</div>
+<!-- New Stuff above this -->
+    <div class="posts list">
+      {{#each posts}}
+        {{> UI.dynamic template=post_item}}
+      {{/each}}
+    </div>
+  </div>
+  {{> UI.dynamic template=postsLoadMore}}
+
+</template>

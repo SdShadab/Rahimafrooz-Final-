@@ -1,0 +1,34 @@
+Template[getTemplate('postAvatar')].helpers({
+profileUrl: function(){
+    // note: we don't want the post to be re-rendered every time user properties change
+    var user = Meteor.users.findOne(this.userId, {reactive: false});
+    if(user)
+      return getProfileUrl(user);
+  },
+  authorName: function(){
+    return getAuthorName(this);
+  },
+   url: function () {
+    if (this.user) {
+  image_width: 600,
+    image_height: 450,
+    image_method: 'crop'
+      return getAvatarUrl(this.user);
+    }
+    else if (this.userId) {
+      var user = Meteor.users.findOne(this.userId);
+      if (user) {
+  image_width: 600,
+    image_height: 450,
+    image_method: 'crop'
+        return getAvatarUrl(user);
+      }
+    }
+  },
+  cssClass: function () {
+    if (this.class) {
+      return this.class;
+    }
+    return 'user-avatar';
+  }
+});

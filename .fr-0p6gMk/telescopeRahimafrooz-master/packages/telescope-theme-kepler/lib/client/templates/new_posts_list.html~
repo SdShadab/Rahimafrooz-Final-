@@ -1,0 +1,22 @@
+<template name="newPostsList">
+  <div class="posts-wrapper grid">
+    <h2 class="welcome-message">Welcome!</h2>
+    
+   
+<div style="float:left;height:400px;"><iframe width="640" height="390" src="//www.youtube.com/embed/tmeOjFno6Do" frameborder="0" allowfullscreen></iframe></div>
+<div style="float:left;height:400px;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt, enim a scelerisque facilisis, dolor velit mollis elit, sit amet mollis eros lacus vitae purus. Nullam et tellus velit, ac dapibus eros. Aliquam erat volutpat. Mauris nec dolor dui, at eleifend ante. Etiam auctor facilisis semper. In eget erat at tellus tincidunt laoreet. In ultricies, nunc mattis fermentum condimentum, libero velit accumsan felis, vitae pharetra elit est a turpis. Maecenas convallis tortor rutrum magna imperdiet posuere sit amet sed nunc. In iaculis eleifend iaculis. Pellentesque ut magna eu tellus dictum ultricies at vel tortor. Praesent risus nunc, pulvinar quis dictum eget, posuere vitae neque. Etiam ut ante lacus. </p></div>
+
+
+    <br><br>
+    <div class="posts list">
+      {{#each posts}}
+        {{> UI.dynamic template=post_item}}
+      {{/each}}
+    </div>
+    {{#if hasMorePosts}}
+      <div class="more-button">
+        <a href="{{loadMoreUrl}}">{{i18n "Load more"}}</a>
+      </div>
+    {{/if}}
+  </div>
+</template>

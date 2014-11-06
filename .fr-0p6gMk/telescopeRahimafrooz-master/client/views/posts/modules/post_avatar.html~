@@ -1,0 +1,5 @@
+<template name="postAvatar">
+
+    
+  <a class="post-avatar-link" href="{{profileUrl}}">{{>avatar user=this}}</a>
+</template>
