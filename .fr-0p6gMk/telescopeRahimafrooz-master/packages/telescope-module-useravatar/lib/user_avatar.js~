@@ -1,5 +1,0 @@
-
-postModules.push({
-  template: 'postAvatar', 
-  position: 'right-left'
-});

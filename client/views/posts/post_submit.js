@@ -28,14 +28,15 @@ Template[getTemplate('post_submit')].helpers({
     var dropzone = '<form id="my-awesome-dropzone" action="/" class="dropzone"><input type="hidden" value="" name="S3" id="s3Url"></form>';
      Dropzone.options.myAwesomeDropzone = { maxFilesize: 10, autoProcessQueue: true, init: function(){
                         this.on("sending", function(file) {
-                            console.log(file.name)
+                            console.log(file.name);
+                            var extension = file.name.split('.').pop();
                             var s3 = new AWS.S3(options = {accessKeyId: "AKIAJ4SISOHP5EFRHNWA", secretAccessKey: "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"});
                             var fileName = file.name;
                             var fileUrl = fileName.split(".",1)+Meteor.userId();
-                            var s3Url = "http://bwvids.s3.amazonaws.com/"+fileUrl+'.mp4';
+                            var s3Url = "http://bwvids.s3.amazonaws.com/"+fileUrl+'.'+extension;
                             var params = {
                                 Bucket: 'bwvids', /* required */
-                                Key: fileUrl+'.mp4', /* required */
+                                Key: fileUrl+'.'+extension, /* required */
                                 ACL: 'public-read',
                                 Body: file,
                                 };
