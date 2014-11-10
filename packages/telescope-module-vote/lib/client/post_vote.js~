@@ -10,7 +10,7 @@ Template[getTemplate('postVote')].helpers({
   }
 });
 
-Template[getTemplate('postUpvote')].events({
+Template[getTemplate('postVote')].events({
   'click .upvote-link': function(e, instance){
     var post = this;
     e.preventDefault();

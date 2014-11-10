@@ -1,9 +1,9 @@
 Meteor.startup(function () {
   Router.map(function() {
-    this.route('about', {
-      path: '/about',
-      template: getTemplate('aboutPage')
+    this.route('morevideos', {
+      path: '/morevideos',
+      template: getTemplate('morePage')
     });
   });
 });
-primaryNav.push('aboutLink');
+

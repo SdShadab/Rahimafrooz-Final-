@@ -71,8 +71,6 @@ service-configuration
 accounts-ui
 splendido:accounts-templates-unstyled
 posts-grid
-telescope-module-useravatar
-telescope-theme-madrasa
 telescope-theme-theawesome
 telescope-module-vote
 postvideo
@@ -82,4 +80,6 @@ mrt:popcorn
 s3player
 postspagecategory
 popcorn
+telescope-static-pages
+telescope-module-useravatar
 

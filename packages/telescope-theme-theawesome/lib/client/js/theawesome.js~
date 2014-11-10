@@ -1,4 +1,4 @@
-templates["postInfo"]="postInfoTheAwesome";
+templates["postInfo"]= "postslistTheAwesome";
 templates["nav"]     = "navTheAwesome";
 templates["posts_list"] = "postslistTheAwesome";
 templates["layout"] = "layoutTheAwesome";

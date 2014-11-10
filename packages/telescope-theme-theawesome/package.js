@@ -20,10 +20,15 @@ Package.onUse(function (api) {
     'lib/client/templates/layout_theawesome.html',
     'lib/client/templates/viewsmenu_theawesome.html',
     'lib/client/templates/submitbutton_theawesome.html',
+    'lib/client/templates/postmeta_theawesome.html',
+
     
     /* JS Link */
     'lib/client/js/theawesome.js',
+'lib/client/js/postcomments.js',
 
     ], ['client']);
 
 });
+
+

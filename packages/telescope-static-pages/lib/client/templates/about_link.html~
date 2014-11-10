@@ -1,3 +1,6 @@
-<template name="aboutLink">
-  <a href="/about">About</a>
+<template name="moreVideos">
+<!--  <a href="/about">About</a>-->
+ <div id="categories">
+     <a href="/morevideos">{{i18n "VIEW MORE"}}</a>
+  </div>
 </template>

@@ -1,0 +1,6 @@
+Template[getTemplate('postsmetaTheAwesome')].helpers({
+ 
+  getTemplate: function () {
+    return getTemplate(this.template);
+  }
+});

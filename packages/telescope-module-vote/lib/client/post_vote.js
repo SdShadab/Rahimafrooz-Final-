@@ -9,6 +9,26 @@ Template[getTemplate('postVote')].helpers({
       return this.rank + 1;
   }
 });
+ Template[getTemplate('postVote')].helpers({
+    sourceLink: function(){
+      return !!this.url ? this.url : getSiteUrl() + "posts/"+this._id;
+    },
+    viaTwitter: function () {
+      return !!getSetting('twitterAccount') ? 'via='+getSetting('twitterAccount') : '';
+    }
+  });
+
+  Template[getTemplate('postVote')].events({
+    'click .share-link': function(e){
+      var $this = $(e.target).parents('.post-share').find('.share-link');
+      var $share = $this.parents('.post-share').find('.share-options');
+      e.preventDefault();
+      $('.share-link').not($this).removeClass("active");
+      $(".share-options").not($share).addClass("active");
+      $this.toggleClass("active");
+      $share.toggleClass("active");
+    }
+  });
 
 Template[getTemplate('postVote')].events({
   'click .upvote-link': function(e, instance){
