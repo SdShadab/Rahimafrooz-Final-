@@ -71,7 +71,6 @@ service-configuration
 accounts-ui
 splendido:accounts-templates-unstyled
 posts-grid
-telescope-theme-theawesome
 telescope-module-vote
 postvideo
 dbarrett:dropzonejs
@@ -82,4 +81,5 @@ postspagecategory
 popcorn
 telescope-static-pages
 telescope-module-useravatar
+telescope-theme-theawesome
 

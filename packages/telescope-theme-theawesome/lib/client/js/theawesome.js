@@ -1,4 +1,5 @@
 templates["postInfo"]= "postsmetaTheAwesome";
+templates["userMenu"]="userMenuTheAwesome";
 templates["nav"]     = "navTheAwesome";
 templates["posts_list"] = "postslistTheAwesome";
 templates["layout"] = "layoutTheAwesome";
