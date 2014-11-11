@@ -1,18 +1,47 @@
+@font-face {
+    font-family: proxima;
+    src: url(/fonts/proxima-nova.otf);
+}
 body {
-	background: #f3e8c0 !important;
+	background: white !important;
+	/*font-family: proxima;
+	font-weight: 650;*/
 }
 
+h3{
+	color:#4a4444;
+
+}
+#at-btn {
+	background-color:#155ea0; 
+}
 .header {
 height: 110px;
-background-color: #172f51 !important;
+background-image: url("/img/header.png") !important;
 margin-bottom: 40px;
-
+padding-left:54px;
+padding-right: 54px;
+color:white;
 }
-h3 {
-	color:#172f51;
+.search .search-field{
+	-webkit-transition: all 0.2s linear;
+}
+a:hover {
+	color:#155ea0;
 }
 p {
 	font-size: 96.5%;
+}
+.fa-lightbulb-o {
+	color:#f3e8c0;
+	font-size: 16px !important;
+}
+.fa-share-alt {
+	color:#E76919;
+	font-size: 16px !important;
+}
+.fa-lightbulb-o:hover {
+	color:#155ea0;
 }
 
 .post-discuss {
@@ -28,25 +57,22 @@ p {
 	text-align: center;
 }
 .button {
-	background-color: #172f51 !important;
-	color:#f3e8c0 !important;
+	background-color: #155ea0 !important;
+	color:white !important;
 }
 .button:hover {
-	color:#172f51;
-	background-color: #f3e8c0;
+	color:#155ea0
+	;
+	background-color: white;
 	
 	-webkit-transition: all 0.2s linear;
 }
 /* BODY CREAM*/
-body > div > div.inner-wrapper.template-morePage > div.content-wrapper > div {
-	background: #f3e8c0;
-}
+
  div.modules-group.center-modules > div > div.post-content.center-center.cell > div > div > div:nth-child(2) {
  	display: none !important;
  }
-body > div > div.inner-wrapper.template-postslistTheAwesome > div.content-wrapper > div {
-	background: #f3e8c0;
-}
+
 /**/
 .logo {
 	float: left;
@@ -61,7 +87,7 @@ body > div > div.inner-wrapper.template-postslistTheAwesome > div.content-wrappe
 }*/
 
 .footer {
-	background: #f3e8c0;
+	background: white;
 	font-size: 11px;
 }
 
@@ -86,9 +112,9 @@ width:180px;
 }
 
 .submitbutton > a{
-	background: #172f51;
+	background: #155ea0;
 	text-align: center;
-	border: 2px solid #172f51;
+	border: 2px solid #155ea0;
 	width: 100%;
 	padding-left: 20%;
 	padding-right: 20%;
@@ -96,7 +122,7 @@ width:180px;
 	padding-bottom: 20px;
 	border-radius: 5px;
 	text-transform: uppercase;
-	color:#f3e8c0;
+	color:white;
 }
 
 .post-heading .post-title:visited {
@@ -104,18 +130,18 @@ width:180px;
 }
   #morevid > a {
   		
-  		border: 2px solid #172f51;
+  		border: 2px solid #155ea0;
         border-radius: 5px;
 		padding-top: 1%;
 		padding-bottom: 1%;
 		padding-left: 5%;
 		padding-right: 5%;
-		background: #172f51;
-		color: #f3e8c0;
+		background: #155ea0;
+		color: white;
   	}
   	 	#morevid > a:hover {
-  		background: #f3e8c0;
-  		color: #172f51;
+  		background: white;
+  		color: #155ea0;
   		-webkit-transition: all 0.3s linear;
   	}
   	#morevid {
@@ -124,14 +150,14 @@ width:180px;
   	
 
 .submitbutton > a:hover{
-	background: #f3e8c0;
-	color: #172f51;
+	background: white;
+	color: #155ea0;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s linear;
 }
 
 #commentsStuff {
-	color:#172f51 ;
+	color:#155ea0 ;
 	font-weight: bold;
 	text-transform: uppercase;
 	font-size: 15px;
@@ -146,9 +172,9 @@ width:180px;
 	
 }
 .more-button {
-	background: #172f51 !important;
-	color: #f3e8c0 !important;
-	border: 2px solid #172f51;
+	background: #155ea0 !important;
+	color: white !important;
+	border: 2px solid #155ea0;
 	text-transform: uppercase;
 	border-radius: 4px;
 }
@@ -157,7 +183,7 @@ padding-bottom: 40px;
 
 }
 .posts-wrapper .grid .grid-module {
-	background: #f3e8c0 !important;
+	background: white !important;
 }
 
 .has-dropdown  .dropdown-menu{
@@ -181,10 +207,7 @@ padding-bottom: 40px;
 	height:40px;
 }
 
-.post:hover {
-	background: rgba(238, 238, 238, 0.42);
-		-webkit-transition: all 0.2s linear;
-}
+
 .post:visited {
 	background: rgba(238, 238, 238, 0.42);
 }
@@ -195,8 +218,8 @@ padding-bottom: 40px;
 	text-transform: uppercase;
 }
 .more-button:hover {
-	background: #f3e8c0 !important;
-	color: #172f51 !important;
+	background: white !important;
+	color: #155ea0 !important;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s linear;
 }
@@ -208,23 +231,23 @@ padding-bottom: 40px;
     }
 
   #categories > a {
-  		border: 2px solid #172f51;
+  		border: 2px solid #155ea0;
         border-radius: 5px;
 		padding-top: 1%;
 		padding-bottom: 1%;
 		padding-left: 5%;
 		padding-right: 5%;
-		background: #172f51;
-		color: #f3e8c0;
+		background: #155ea0;
+		color: white;
   	}
 
   	#categories > a:hover {
-  		background: #f3e8c0;
-  		color: #172f51;
+  		background: white;
+  		color: #155ea0;
   		-webkit-transition: all 0.3s linear;
   	}
   	.post-heading .post-title:hover {
-  		color:#172f51;
+  		color:#155ea0;
   		-webkit-transition: all 0.3s linear;
   	}
   
@@ -247,8 +270,8 @@ transition: -webkit-transform 250ms cubic-bezier(1,-1.5,0, 1.3);
 	border-radius: 5px;
 	vertical-align: middle;
 }*/
-.fa {
-	color: #172f51;
+.fa-thumbs-up {
+	color: #155ea0;
 	font-size: 16px !important;
 }
 .icon-check {
@@ -284,7 +307,19 @@ transition: -webkit-transform 250ms cubic-bezier(1,-1.5,0, 1.3);
   box-sizing:border-box;
   display: inline-block;
 width: 306px;
-background:#F6F3EA ;
+background:rgba(233, 233, 233, 0.42);
+}
+.post {
+	background:rgba(233, 233, 233, 0.42) ;
+}
+.post-body {
+	background:rgba(233, 233, 233, 0.42); 
+}
+.comment-new .module {
+	background:rgba(233, 233, 233, 0.42); 
+}
+body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > div.comment-new.module {
+	background:rgba(233, 233, 233, 0.42); 
 }
 .grid {
   height:100%;
@@ -343,7 +378,17 @@ background:#F6F3EA ;
 .post .modules-group .inner {
 display: block!important;
 }
-
+.at-btn .submit {
+	background: #155ea0;
+}
+.imagestuff img {
+	width:100%;
+	height:100%;
+}
+.search {
+	border: 1px solid rgba(255, 255, 255, 0.68);
+border-radius: 20px;
+}
 @media screen and (max-width: 640px) {
   .posts.list > .post {
   width:300px;
@@ -376,7 +421,7 @@ display: block!important;
 		}
 
 	.header {
-		 background:#172f51;
+		background-image: url("/img/header.png") !important;
 		height: 90px;
 	}
 /*	.share-link {
@@ -421,8 +466,9 @@ div.modules-group.center-modules > div > div.post-content.center-center.cell > d
 	#categories .right {
 		float: none;
 	}
-	.header{
-		background-color: #172f51;
+	.header {
+		background-image: url("/img/header.png") !important;
+		
 	}
 
 	/* Add Mobile Orange Menu Button code here */

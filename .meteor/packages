@@ -71,7 +71,6 @@ service-configuration
 accounts-ui
 splendido:accounts-templates-unstyled
 posts-grid
-telescope-module-vote
 postvideo
 dbarrett:dropzonejs
 peerlibrary:aws-sdk
@@ -80,6 +79,7 @@ s3player
 postspagecategory
 popcorn
 telescope-static-pages
-telescope-module-useravatar
 telescope-theme-theawesome
+telescope-module-vote
+telescope-module-useravatar
 

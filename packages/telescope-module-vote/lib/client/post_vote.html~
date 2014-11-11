@@ -1,8 +1,15 @@
 <template name="postVote">
   <div class="post-rank"><span>{{oneBasedRank}}</span></div>
   {{#if upvoted}}
-    <span class="upvote-link voted"><i class="fa-check fa-2x"></i><span><strong>{{i18n " Upvoted"}}</strong></span></span>
+    <span class="upvote-link voted"><i class="icon-check"></i><span><strong>{{i18n " Upvoted "}}</strong></span></span>
   {{else}}
-    <a class="upvote-link not-voted" href="#" title="Upvote"><i class="fa fa-thumbs-up fa-2x"></i><span>{{i18n " Upvote"}}</span></a>
+    <a class="upvote-link not-voted" href="#" title="Upvote"><i class="fa fa-thumbs-up "></i><span>{{i18n " Upvote "}}</span></a>
   {{/if}}
+  <a href="#" class="share-link"><i class="icon-share"></i><span class="action">{{i18n ' Share'}}</span></a>
+  <div class="share-options hidden">
+    <a class="mt-facebook mt-share-inline-square-sm" href="https://www.facebook.com/sharer/sharer.php?u={{sourceLink}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/facebook@2x.png"></a>
+    <a class="mt-twitter mt-share-inline-square-sm" href="//twitter.com/intent/tweet?text={{title}}&url={{sourceLink}}&{{viaTwitter}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/twitter@2x.png"></a>
+    <a class="mt-linkedin mt-share-inline-square-sm" href="//www.linkedin.com/shareArticle?mini=true&url={{sourceLink}}&amp;summary={{title}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/linkedin@2x.png"></a>
+    <a class="mt-google mt-share-inline-square-sm" href="https://plus.google.com/share?url={{sourceLink}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/google@2x.png"></a>
+  </div>
 </template>
