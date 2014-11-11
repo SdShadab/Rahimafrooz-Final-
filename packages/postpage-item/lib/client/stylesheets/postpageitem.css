@@ -1,0 +1,20 @@
+.post-avatar-link img {
+width: 110px !important;
+height: 110px!important;
+vertical-align: middle;
+margin-left: 62px;
+margin-right: 10px;
+border-radius: 100px;
+}
+
+.post-avatar {
+	float: left;
+}
+
+.post {
+	background: transparent;
+}
+
+.post .modules-group .cell {
+margin-right: 20px;
+}

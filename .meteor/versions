@@ -82,6 +82,7 @@ peerlibrary:aws-sdk@2.0.17_2
 peerlibrary:blocking@0.4.2
 percolatestudio:synced-cron@0.3.0
 popcorn@0.0.0
+post-page-item@0.1.0
 posts-grid@0.1.0
 postspagecategory@0.1.0
 postvideo@0.1.0
