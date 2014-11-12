@@ -26,5 +26,13 @@ profileUrl: function(){
       return this.class;
     }
     return 'user-avatar';
+  },
+ postLink: function(){
+    return !!this.url ? getOutgoingUrl(this.url) : "/posts/"+this._id;
+  },
+  postTarget: function() {
+    return !!this.url ? '_blank' : '';
   }
 });
+
+

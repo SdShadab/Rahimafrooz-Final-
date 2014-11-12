@@ -10,17 +10,13 @@ profileUrl: function(){
   },
    url: function () {
     if (this.user) {
-  image_width: 600,
-    image_height: 450,
-    image_method: 'crop'
+
       return getAvatarUrl(this.user);
     }
     else if (this.userId) {
       var user = Meteor.users.findOne(this.userId);
       if (user) {
-  image_width: 600,
-    image_height: 450,
-    image_method: 'crop'
+
         return getAvatarUrl(user);
       }
     }
@@ -30,5 +26,13 @@ profileUrl: function(){
       return this.class;
     }
     return 'user-avatar';
+  },
+ postLink: function(){
+    return !!this.url ? getOutgoingUrl(this.url) : "/posts/"+this._id;
+  },
+  postTarget: function() {
+    return !!this.url ? '_blank' : '';
   }
 });
+
+

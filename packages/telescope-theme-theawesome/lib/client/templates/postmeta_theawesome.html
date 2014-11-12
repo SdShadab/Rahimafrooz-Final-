@@ -1,7 +1,8 @@
 <template name="postsmetaTheAwesome">
   <div class="post-meta-item">
+By <a class="post-author" href="{{profileUrl}} ">{{authorName}} </a> about <span class="post-time">{{ago}}</span><br>
     <span class="points">{{baseScore}} <span class="unit">{{pointsUnitDisplayText}} |</span></span> {{> UI.dynamic template=postCommentsLink}}
-<br>By <a class="post-author" href="{{profileUrl}} ">{{authorName}} </a> about <span class="post-time">{{ago}}</span>
+
    {{#if can_edit}}
    <!--   | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Edit</a>-->
     {{/if}}

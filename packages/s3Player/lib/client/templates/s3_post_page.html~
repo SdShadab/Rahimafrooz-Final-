@@ -7,15 +7,23 @@
       {{> UI.dynamic template=post_body}}
     {{/if}}
 
-    {{#if videoLink}}
-    <div class="popcorn">
-      <video id="ourVideo" >
-        <source src="{{videoLink}}">
-      </video>
-    </div>
-    {{/if}}
+  {{#if videoLink}}
+     {{#if videostuff}}
+        <div class="popcorn">
+          <video id="ourVideo" controls width="900px">
+            <source src="{{videoLink}}">
+          </video>
+        </div>
+        {{else}}
+        <div class="imageStuff">
+        <img src="{{videoLink}}" width="500" height="auto">
+        </div>
+        {{/if}}
+  {{/if}}  
 
     {{> UI.dynamic template=comment_form}}
     {{> UI.dynamic template=comment_list}}
+
+    {{> UI.dynamic template=postscategory}}
   </div>
 </template>

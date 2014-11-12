@@ -117,7 +117,6 @@ telescope-kadira@0.1.0
 telescope-lib@0.2.9
 telescope-module-embedly@0.2.9
 telescope-module-share@0.0.0
-telescope-module-useravatar@0.0.0
 telescope-module-vote@0.0.0
 telescope-newsletter@0.1.0
 telescope-notifications@0.1.0
@@ -128,6 +127,7 @@ telescope-tags@0.0.0
 telescope-theme-base@0.0.0
 telescope-theme-hubble@0.0.0
 telescope-theme-theawesome@0.1.0
+telescope-thumbnail@0.0.0
 telescope-update-prompt@0.1.0
 templating@1.0.7
 tracker@1.0.2
