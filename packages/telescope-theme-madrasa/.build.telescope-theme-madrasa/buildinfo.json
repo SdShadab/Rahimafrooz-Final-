@@ -1,0 +1,41 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/package.js": "2351f86289b92a4eeacf9ed36fa5a00ad7a8fcc4"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/package.js": "2351f86289b92a4eeacf9ed36fa5a00ad7a8fcc4",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/lib/client/stylesheets/screen.css": "bf3abd0660745e6d62e4fc028eb7987aa693364a"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/package.js": "2351f86289b92a4eeacf9ed36fa5a00ad7a8fcc4",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/lib/client/stylesheets/screen.css": "bf3abd0660745e6d62e4fc028eb7987aa693364a"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa/package.js": "2351f86289b92a4eeacf9ed36fa5a00ad7a8fcc4"
+    },
+    "directories": []
+  },
+  "source": "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-madrasa",
+  "buildTimeDirectDependencies": {
+    "templating": "1.0.7",
+    "telescope-theme-theawesome": "0.1.0+1956870e82860926e0333267c255e75e278bbb58",
+    "meteor": "1.1.1",
+    "telescope-theme-hubble": "0.0.0+4af646ba52eb0f8cf912040e3acbcb9228e17972",
+    "telescope-base": "0.0.0+1ab5d5000bd1d1c98b130ce7c411cfd5e83f0d51"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

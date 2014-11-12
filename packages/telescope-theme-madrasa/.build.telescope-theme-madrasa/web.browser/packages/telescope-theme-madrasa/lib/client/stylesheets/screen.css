@@ -1,0 +1,97 @@
+/* madrasa from here */
+.posts-wrapper .grid .grid-module {
+  background:transparent;
+  box-shadow:none;
+}
+.posts.list {
+  display:block;
+  box-sizing:border-box;
+}
+.posts.list > .post {
+  width:calc(100%/3.3);
+  height:300px;
+  padding-top:35px;
+  padding:25px;
+  margin:8px;
+  float:left;
+  box-sizing:border-box;
+  display: inline-block;
+width: 306px;
+}
+.grid {
+  height:100%;
+  padding:6px;
+}
+
+.post:first-child {
+  border-radius:none;
+}
+.post {
+  box-shadow:0 1px 3px rgba(26,53,71,.08), 0 0 0 1px rgba(26,53,71,.04), 0 1px 1px rgba(26,53,71,.06);
+  border-bottom:none;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+
+.post .right-modules, .post-actions.left-right.cell, .post-rank, .post-upvote {
+  display:none;
+}
+.more-button {
+  float:left;
+}
+.footer {
+  position:relative;
+  float: left;
+}
+/*till here*/
+
+.user-avatar img{
+  float:none;
+  max-width:300px;
+  max-height:200px;
+ width:200px;
+ height:150px;
+ display: block;
+ vertical-align: middle;
+ padding-right: 20px;
+}
+.post-info{
+  float: none;
+}
+.post-avatar  {
+  float: none;
+
+}
+.post-avatar img {
+  width: 110px !important;
+  height:110px!important;
+  vertical-align: middle;
+  margin-left: 62px;
+}
+.post .modules-group .inner {
+display: block!important;
+}
+
+@media screen and (max-width: 640px) {
+  .posts.list > .post {
+  width:300px;
+
+ height:300px;
+  padding-top:35px;
+  margin:8px;
+  float:left;
+  box-sizing:border-box;
+  display: inline-block;
+}
+.post-avatar img {
+  width: 110px !important;
+  height:110px!important;
+  vertical-align: middle;
+  margin-left: 56px;
+}
+
+}
+

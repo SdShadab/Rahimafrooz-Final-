@@ -6,13 +6,13 @@ Template[getTemplate('s3PostPage')].helpers({
       },
 
     videostuff: function(){
-      	if(postObject.videoLink.split('.').pop() == 'mp4') {
+          var videoLink = post.videoLink;
+          if (videoLink.indexOf(".mp4") >= 1) {
       		console.log('Yippee');
-      		return true;
-      	}
-      }
-
-  });
+          return true;
+          }
+      		}
+      });
 
 Template[getTemplate('s3PostPage')].created = function () {
   post = this.data;
@@ -22,4 +22,5 @@ Template[getTemplate('s3PostPage')].rendered = function() {
 Popcorn.player( "baseplayer" );
 var pop = Popcorn.baseplayer($("#ourVideo"));
 pop.play();
+
 };

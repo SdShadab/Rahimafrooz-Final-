@@ -1,0 +1,44 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/package.js": "76fd39948f885d02f2d3654cb94d6eaedac710d7"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/package.js": "76fd39948f885d02f2d3654cb94d6eaedac710d7",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/stylesheets/screen.css": "2025a557b8e8c1fefe13c50e51014e4430c5b284",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/templates/new_posts_list.html": "674302892b010c2153142b5dd6524a362defc617",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/kepler.js": "8c3340a73170ea96e55d217eb5318104ccf28db3"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/package.js": "76fd39948f885d02f2d3654cb94d6eaedac710d7",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/stylesheets/screen.css": "2025a557b8e8c1fefe13c50e51014e4430c5b284",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/templates/new_posts_list.html": "674302892b010c2153142b5dd6524a362defc617",
+        "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/lib/client/kepler.js": "8c3340a73170ea96e55d217eb5318104ccf28db3"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler/package.js": "76fd39948f885d02f2d3654cb94d6eaedac710d7"
+    },
+    "directories": []
+  },
+  "source": "/home/sdshadab/Desktop/Telescope-master/packages/telescope-theme-kepler",
+  "buildTimeDirectDependencies": {
+    "templating": "1.0.7",
+    "meteor": "1.1.1",
+    "telescope-theme-hubble": "0.0.0+4af646ba52eb0f8cf912040e3acbcb9228e17972",
+    "telescope-base": "0.0.0+1ab5d5000bd1d1c98b130ce7c411cfd5e83f0d51"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

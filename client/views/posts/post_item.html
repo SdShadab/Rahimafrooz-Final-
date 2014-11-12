@@ -1,5 +1,5 @@
 <template name="post_item">
-  <div class="post {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}}" id="{{_id}}">
+   <div class="post {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}}" id="{{_id}}">
     <div class="modules-group left-modules">
       <div class="inner">
       {{#each leftPostModules}}
@@ -15,6 +15,7 @@
         <div class="{{moduleClass}}">
           {{> UI.dynamic template=getTemplate data=..}}
         </div>
+      
       {{/each}}
       </div>
     </div>
@@ -28,4 +29,5 @@
       </div>
     </div>
   </div>
+ 
 </template>
