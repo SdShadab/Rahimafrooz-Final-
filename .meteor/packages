@@ -51,7 +51,6 @@ telescope-search
 telescope-lib
 telescope-rss
 telescope-api
-telescope-module-share
 telescope-theme-base
 telescope-theme-hubble
 telescope-daily
@@ -81,6 +80,7 @@ telescope-static-pages
 telescope-theme-theawesome
 telescope-module-vote
 post-page-item
-s3player
 telescope-thumbnail
-
+s3player
+sharing-thingy
+postpage-side-shit

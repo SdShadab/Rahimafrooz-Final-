@@ -1,22 +1,16 @@
 <template name="thumbnail">
 
-   
-   
-  {{#if videoLink}}
-     {{#if videostuff}}
-        <div class="popcornthumb">
-          <video id="thumbvideo">
-            <source src="{{videoLink}}" width="170px" height="100px">
-          </video>
-
-        </div>
-        {{else}}
+    {{#if imageLink}}
         <div class="imagethumb">
-        <img src="{{videoLink}}" width="200px" height="100px">
+     <a href="{{postLink}}" target="{{postTarget}}">   <img src="{{imageLink}}"></a>
         </div>
-        {{/if}}
-  {{/if}}  
-
-
-
+      {{/if}}
+  {{#if videoLink}}
+      <div class="popcornthumb">
+         <a href="{{postLink}}" target="{{postTarget}}">    <video id="thumbvideo">
+            <source src="{{videoLink}}" >
+          </video></a>
+        </div>
+     {{/if}}
+     
 </template>

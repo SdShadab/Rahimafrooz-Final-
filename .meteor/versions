@@ -83,6 +83,7 @@ peerlibrary:blocking@0.4.2
 percolatestudio:synced-cron@0.3.0
 popcorn@0.0.0
 post-page-item@0.1.0
+postpage-side-shit@0.1.0
 posts-grid@0.1.0
 postspagecategory@0.1.0
 postvideo@0.1.0
@@ -99,6 +100,7 @@ sacha:spin@2.0.4
 service-configuration@1.0.1
 session@1.0.2
 sha@1.0.0
+sharing-thingy@0.0.0
 softwarerero:accounts-t9n@1.0.0
 spacebars-compiler@1.0.2
 spacebars@1.0.2
@@ -116,7 +118,6 @@ telescope-i18n@0.0.0
 telescope-kadira@0.1.0
 telescope-lib@0.2.9
 telescope-module-embedly@0.2.9
-telescope-module-share@0.0.0
 telescope-module-vote@0.0.0
 telescope-newsletter@0.1.0
 telescope-notifications@0.1.0

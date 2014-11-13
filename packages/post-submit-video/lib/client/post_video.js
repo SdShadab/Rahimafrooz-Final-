@@ -7,3 +7,11 @@ var videoLink = {
   }
 }
 addToPostSchema.push(videoLink);
+var imageLink = {
+  propertyName: 'imageLink',
+  propertySchema: {
+    type: String,
+    optional: true
+  }
+}
+addToPostSchema.push(imageLink);

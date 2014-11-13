@@ -1,0 +1,39 @@
+<template name="s3PostPage">
+
+ {{#if categories}}
+ <div class="sideshit">
+ <h3>Related Posts</h3>
+  {{#each postca}}
+   {{> UI.dynamic template=postpagesidebar}}
+  {{/each}}
+</div>
+{{/if}}
+
+  <div class="post">
+      {{> UI.dynamic template=post_item}}
+    {{#if body}}
+      {{> UI.dynamic template=post_body}}
+    {{/if}}
+
+  {{#if videoLink}}
+     {{#if videostuff}}
+        <div class="popcorn">
+          <video id="ourVideo" controls width="900px">
+            <source src="{{videoLink}}">
+          </video>
+        </div>
+        {{else}}
+        <div class="imageStuff">
+        <img src="{{videoLink}}" width="500" height="auto">
+        </div>
+        {{/if}}
+  {{/if}}  
+
+ 
+
+  </div>
+    {{> UI.dynamic template=comment_form}}
+    {{> UI.dynamic template=comment_list}}
+
+
+</template>

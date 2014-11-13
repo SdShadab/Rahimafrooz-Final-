@@ -2,21 +2,23 @@
 
 Template[getTemplate('thumbnail')].helpers({
   
-  videostuff: function(){
-      	if(postObject.videoLink.split('.').pop() == 'mp4') {
-      		console.log('Yippee');
-      		return true;
-      	}
-      }
+ 
+ postLink: function(){
+    return !!this.url ? getOutgoingUrl(this.url) : "/posts/"+this._id;
+  },
+  postTarget: function() {
+    return !!this.url ? '_blank' : '';
+  }
       });
 
-Template[getTemplate('thumbnail')].created = function () {
-  post = this.data;
-  //var pop = Popcorn($("#ourvideo"));
-};
-Template[getTemplate('thumbnail')].rendered = function() {
-Popcorn.player( "baseplayer" );
-var pop = Popcorn.baseplayer($("#thumbvideo"));
-pop.play();
+//Template[getTemplate('thumbnail')].created = function () {
+ // post = this.data;
+ //var pop = Popcorn($("#thumbvideo"));
+//pop.play();
+//};
+//Template[getTemplate('thumbnail')].rendered = function() {
+//Popcorn.player( "baseplayer" );
+//var pop = Popcorn.baseplayer($("#thumbvideo"));
+//pop.play();
 
-};
+//};
