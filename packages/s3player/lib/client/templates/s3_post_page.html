@@ -1,6 +1,55 @@
 <template name="s3PostPage">
 
- {{#if categories}}
+  <div class="post">
+      <p><span class="title" style="font-size: 50px;">{{title}} </span></p>
+         {{#if imageLink}}
+        <div class="imagestuff">
+     <a href="{{postLink}}" target="{{postTarget}}"><img src="{{imageLink}}" width="580"></a>
+        </div>
+      {{/if}}
+
+  {{#if videoLink}}
+      <div class="videostuff">
+         <a href="{{postLink}}" target="{{postTarget}}"><video id="thumbvideo">
+            <source src="{{videoLink}}" >
+          </video>
+          <div id="play"></div>
+        </a>
+        </div>
+     {{/if}}
+
+     <div class="bodystuff">
+      {{#if body}}
+      {{> UI.dynamic template=post_body}}
+    {{/if}}
+
+    <div class="theguy">
+    <p><b>Written by</b> <span class="author"> {{authorName}}</span><img class="{{cssClass}}" src="{{url}}"/></p>
+    </div>
+    </div>
+
+     <div class="extrastuff">
+
+     <div class="votes">
+      <span class="points">{{baseScore}} <span class="unit">{{pointsUnitDisplayText}} </span></span>
+      {{> UI.dynamic template=postVote}}
+      </div>
+
+     <div class="time">
+      <p><span class="post-time">Posted {{ago}}</span></p>
+      </div>
+
+      <div class="share">
+      {{> UI.dynamic template=postShare}}
+      </div>
+
+      </div>
+
+    {{> UI.dynamic template=comment_form}}
+    {{> UI.dynamic template=comment_list}}
+  </div>
+
+   {{#if categories}}
  <div class="sideshit">
  <h3>Related Posts</h3>
   {{#each postca}}
@@ -8,32 +57,5 @@
   {{/each}}
 </div>
 {{/if}}
-
-  <div class="post">
-      {{> UI.dynamic template=post_item}}
-    {{#if body}}
-      {{> UI.dynamic template=post_body}}
-    {{/if}}
-
-  {{#if videoLink}}
-     {{#if videostuff}}
-        <div class="popcorn">
-          <video id="ourVideo" controls width="900px">
-            <source src="{{videoLink}}">
-          </video>
-        </div>
-        {{else}}
-        <div class="imageStuff">
-        <img src="{{videoLink}}" width="500" height="auto">
-        </div>
-        {{/if}}
-  {{/if}}  
-
- 
-
-  </div>
-    {{> UI.dynamic template=comment_form}}
-    {{> UI.dynamic template=comment_list}}
-
 
 </template>

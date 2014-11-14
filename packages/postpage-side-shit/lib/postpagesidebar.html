@@ -1,7 +1,8 @@
 <template name="postpagesidebar">
 
-<p>{{title}}
-{{author}}
-{{[postedAt]}}</p>
+<div class="singlestuff">
+{{> UI.dynamic template=thumbnail}}
+<p><a href="/posts/{{_id}}">{{title}}</a> by {{authorName}}</p>
+</div>
 
 </template>

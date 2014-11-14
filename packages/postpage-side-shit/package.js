@@ -6,12 +6,13 @@ Package.describe({
 
 Package.onUse(function (api) {
 
-  api.use(['templating', 'telescope-base', 'telescope-theme-hubble','mrt:popcorn'], ['client']);
+  api.use(['telescope-thumbnail','templating', 'telescope-base', 'telescope-theme-hubble','mrt:popcorn'], ['client']);
 
   api.use(['telescope-lib'], ['client', 'server']);
 
   api.add_files([
     'lib/postpagesidebar.html',
+    'lib/postpagesidebar.js',
     ], ['client']);
 
    

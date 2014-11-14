@@ -1,8 +1,81 @@
 .sideshit {
 	float: right;
-width: 400px;
+width: 350px;
+padding: 20px;
 }
 
 .post {
+	float: left;
 	width: 580px;
+	box-shadow: none;
+}
+
+.share > .share-stuff {
+position: inherit;
+/* top: 320px; */
+/* right: 56px; */
+/* left: 63px; */
+padding: 5px;
+}
+
+.extrastuff {
+background: rgba(233, 233, 233, 0.42);
+padding-top: 10px;
+margin-bottom: 5px;
+border-radius: 3px;
+}
+
+.votes {
+	width: 140px;
+float: right;
+padding: 10px;
+}
+
+.time {
+	width: 185px;
+float: left;
+padding: 13px;
+}
+
+.post-body {
+background: transparent;
+padding: 0px;
+}
+
+.theguy {
+	text-align: right;
+}
+
+.post-time {
+	font-style: italic;
+}
+
+.button {
+	background: #5B89C0 !important;
+}
+
+.bodystuff {
+	background: rgba(233, 233, 233, 0.42);
+	margin-bottom: 5px;
+	padding: 10px;
+border-radius: 5px;
+}
+
+.author {
+	font-style: italic;
+}
+
+b {
+	font-weight: bold;
+}
+
+.singlestuff > .imagethumb > a > img {
+	width: 80%;
+}
+
+.singlestuff {
+	padding-bottom: 20px;
+border-bottom: 2px dotted grey;
+border-left: 2px dotted grey;
+padding-left: 10px;
 }
