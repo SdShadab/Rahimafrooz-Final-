@@ -1,10 +1,10 @@
 <template name="s3PostPage">
 
   <div class="post">
-      <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span></p><br>
+    <div class="bodystuff">
          {{#if imageLink}}
         <div class="imagestuff">
-     <a href="{{postLink}}" target="{{postTarget}}"><img src="{{imageLink}}" width="580"></a>
+     <a href="{{postLink}}" target="{{postTarget}}"><img src="{{imageLink}}" ></a>
         </div>
       {{/if}}
 
@@ -17,30 +17,37 @@
         </a>
         </div>
      {{/if}}
-
-     <div class="bodystuff">
+ <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span></p>
+	<p>{{mifta}}</p></div>
+    
+     <div class="theguy">
+    <p><i class="fa fa-pencil"></i><a href="{{profileUrl}}"> <span class="author"> {{authorName}}</span></a></p>
+    <p><span class="post-time"><i class="fa fa-clock-o"></i> {{ago}}</span></p>
+    </div>
+<br><br>
       {{#if body}}
       {{> UI.dynamic template=post_body}}
     {{/if}}
 
-    <div class="theguy">
-    <p><b>Written by</b> <span class="author"> {{authorName}}</span><img class="{{cssClass}}" src="{{url}}"/></p>
-    </div>
+    
     </div>
 
      <div class="extrastuff">
 
      <div class="votes">
       <span class="points">{{baseScore}} <span class="unit">{{pointsUnitDisplayText}} </span></span>
-      {{> UI.dynamic template=postVote}}
+     <!-- {{> UI.dynamic template=postVote}}-->
       </div>
 
-     <div class="time">
-      <p><span class="post-time">Posted {{ago}}</span></p>
-      </div>
+     
 
       <div class="share">
-      {{> UI.dynamic template=postShare}}
+    <div class="share-crap">
+    <a class="mt-facebook mt-share-inline-square-sm" href="https://www.facebook.com/sharer/sharer.php?u={{sourceLink}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/facebook@2x.png"></a>
+    <a class="mt-twitter mt-share-inline-square-sm" href="//twitter.com/intent/tweet?text={{title}}&url={{sourceLink}}&{{viaTwitter}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/twitter@2x.png"></a>
+    <a class="mt-linkedin mt-share-inline-square-sm" href="//www.linkedin.com/shareArticle?mini=true&url={{sourceLink}}&amp;summary={{title}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/linkedin@2x.png"></a>
+    <a class="mt-google mt-share-inline-square-sm" href="https://plus.google.com/share?url={{sourceLink}}" target="_blank"><img src="//mojotech-static.s3.amazonaws.com/google@2x.png"></a>
+  </div>
       </div>
 
       </div>

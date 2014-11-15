@@ -15,7 +15,7 @@ Template[getTemplate('s3PostPage')].helpers({
   },
 
       postca: function(){ 
-        var poststuff = Posts.find({"categories.name":postObject.categories[0].name},{limit: 4});
+        var poststuff = Posts.find({"categories.name":postObject.categories[0].name},{limit: 3});
       return poststuff.fetch();
     },
 

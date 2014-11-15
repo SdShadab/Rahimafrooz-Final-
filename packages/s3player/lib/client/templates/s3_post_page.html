@@ -17,7 +17,8 @@
         </a>
         </div>
      {{/if}}
- <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span></p></div>
+ <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span><span style="text-transform:uppercase;font-weight:bold;background: #155ea0;color: white;border-radius: 5px;padding: 2px;font-size: 11px;">{{mifta}}</span></p>
+	<p></p></div>
     
      <div class="theguy">
     <p><i class="fa fa-pencil"></i><a href="{{profileUrl}}"> <span class="author"> {{authorName}}</span></a></p>
@@ -34,8 +35,8 @@
      <div class="extrastuff">
 
      <div class="votes">
-      <span class="points">{{baseScore}} <span class="unit">{{pointsUnitDisplayText}} </span></span>
-     <!-- {{> UI.dynamic template=postVote}}-->
+     
+     {{> UI.dynamic template=postVote}}
       </div>
 
      
@@ -56,8 +57,8 @@
   </div>
 
    {{#if categories}}
- <div class="sideshit">
- <h3>Related Posts</h3>
+ <div class="sideshit" id="sidecrap">
+ <h3 style="background: #e9e9e9;padding: 4px;color: #155ea0;">Related Posts</h3>
   {{#each postca}}
    {{> UI.dynamic template=postpagesidebar}}
   {{/each}}

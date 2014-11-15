@@ -78,14 +78,24 @@ b {
 }
 
 .singlestuff > .imagethumb > a > img {
-	width: 80%;
+	width: 84%;
+	height:80%;
 }
 
+
 .singlestuff {
+	background:rgba(233, 233, 233, 0.42);
 	padding-bottom: 20px;
-border-bottom: 2px dotted grey;
-border-left: 2px dotted grey;
-padding-left: 10px;
+	padding-top: 20px;
+	/* box-shadow: 0 1px 1px rgba(255,255,255,0.95); */
+ border-bottom: 1px solid rgba(0,0,0,0.1); 
+
+padding-left: 26px;
+
+}
+#sidecrap > div:nth-child(odd) : hover {
+	-webkit-transition: all 0.2s linear !important;
+	background:white !important;
 }
 body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > div.bodystuff > div.imagestuff > a > img {
 	width: 100%;

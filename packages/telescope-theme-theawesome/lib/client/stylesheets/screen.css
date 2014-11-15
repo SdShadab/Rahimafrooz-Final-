@@ -1,6 +1,6 @@
 @font-face {
-    font-family: proxima;
-    src: url(/fonts/proxima-nova.otf);
+    font-family: lato;
+    src: url(/fonts/Lato-Regular.ttf);
 }
 html, body {
     max-width: 100%;
@@ -8,20 +8,31 @@ html, body {
 }
 body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > p > span{
 	font-size: 32px;
+
 }
 body {
 	background: white;
-	/*font-family: proxima;
-	font-weight: 650;*/
+	font-family: lato;
+	/*font-weight: 650;*/
 }
 .hero {
-	background: url("/img/hero.png");
+	background: url("/img/heroes.png");
 	background-repeat: no-repeat;
 	width: 956px;
 height: 670px;
 }
+
+#txtcrap {
+	
+	padding-left:35px;
+	padding-right:35px;
+	
+}
+#intro {
+	font-size: 16px;
+}
 #txt{
-	padding-top: 239px;
+	padding-top: 208px;
 padding-right: 300px;
 padding-left: 30px;
 font-size: 16px;
@@ -30,10 +41,13 @@ color: transparent;
 #bleh1 {
 	color:white;
 	padding-left: 30px;
+	margin-bottom: -9px;
+	text-shadow: 3px 4px black;
 }
 #bleh2 {
 	color:white;
 	padding-left: 66px;
+	text-shadow: 3px 4px black;
 }
 /*#overlay {
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -81,9 +95,23 @@ left: 63px;
 body > div > div.inner-wrapper.template-postslistTheAwesome > header{
 	margin-bottom: 5px;
 }
+.inner-wrapper {
+	background: url("/img/back.png") center center no-repeat;
+}
+.grid {
+	background: transparent;
+}
 #play {
     background: url("/img/main.png") center center no-repeat;
     margin: -140px 10px 0 0;
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    opacity: 0.8;
+}
+#playbtn {
+	background: url("/img/main.png") center center no-repeat;
+    margin: -140px 60px 0 0;
     height: 140px;
     position: relative;
     z-index: 10;
@@ -98,12 +126,13 @@ body > div > div.inner-wrapper.template-postslistTheAwesome > header{
 	background-color:#155ea0; 
 }
 .header {
-height: 90px;
+height: 110px;
 background-image: url("/img/header.png") !important;
 margin-bottom: 40px;
 padding-left:54px;
 padding-right: 54px;
 color:white;
+box-shadow: -12px 2px 7px rgba(0, 0, 0, 0.92);
 }
 .search .search-field{
 	-webkit-transition: all 0.2s linear;
@@ -193,24 +222,27 @@ width:180px;
 .submitbutton {
 	margin-top: 20px;
 	margin-bottom: 40px;
-	width: 300px;
+width: 1090px;
 
 	text-align: left;
 margin-left: 35px;
+float: none;
 }
 
 .submitbutton > a{
-	background: #155ea0;
-	text-align: center;
 	border: 2px solid #155ea0;
-	width: 100%;
-	padding-left: 20%;
-	padding-right: 20%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-radius: 5px;
-	text-transform: uppercase;
-	color:white;
+        border-radius: 5px;
+		padding-top: 1%;
+		padding-bottom: 1%;
+		padding-left: 5%;
+		padding-right: 5%;
+		background: #155ea0;
+		color: white;
+		box-shadow: 0px 6px 10px black;
+}
+.submitbutton>a:hover {
+	background-color: transparent!important;
+	color: white !important;
 }
 
 .post-heading .post-title:visited {
@@ -306,7 +338,11 @@ padding-bottom: 40px;
   #categories {
         width: 980px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 9px;
+margin-top: 29px;
+    }
+    #about {
+    	display: inline-block;
     }
 
   #categories > a {
@@ -377,6 +413,7 @@ body > div > div.inner-wrapper.template-postslistTheAwesome {
   padding:25px;
   margin:8px;
   float:left;
+  border: 1px solid rgba(128, 128, 128, 0.25);
   box-sizing:border-box;
   display: inline-block;
 width: 306px;
@@ -487,7 +524,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
 /*-------#*/
 @media screen and (max-width: 470px) {
 #play {
-    background: url("/img/main.png") center center no-repeat;
+    background: url("/img/PlayButton.png") center center no-repeat;
     margin: -140px 10px 0 0;
     height: 140px;
     position: relative;
@@ -512,6 +549,7 @@ left: 63px;
 	text-align: center;
 
 }
+
  .posts.list > .post {
   width:100%;
  height:380px;
@@ -524,18 +562,28 @@ left: 63px;
 }
 .search {
 border: 1px solid rgba(255, 255, 255, 0);}
+html, body {
+  
+    overflow-x: visible;
+}
 
 }
+
 @media screen and (max-width: 840px) {
 
 	.logo {
 		float: none;
 		text-align: center;
 		}
+		.content-wrapper {
+	max-width: 1000px;
+	
+}
 
 	.header {
 		background-image: url("/img/header.png") !important;
-		height: 90px;
+		height: 110px;
+		box-shadow: -12px 2px 7px rgba(0, 0, 0, 0.92);
 	}
 /*	.share-link {
 	top:40px;
@@ -547,6 +595,10 @@ border: 1px solid rgba(255, 255, 255, 0);}
 	.desktop-nav {
 		display: none;
 	}
+	html, body {
+ 
+    overflow-x: visible;
+}
 	#morevid {
 		float: none !important;
        text-align: center !important;
@@ -591,7 +643,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
 	.header {
 		background-image: url("/img/header.png") !important;
 		
-	}
+	} /*ffd04d*/
 
 	/* Add Mobile Orange Menu Button code here */
 

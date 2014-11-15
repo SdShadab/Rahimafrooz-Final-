@@ -1,8 +1,23 @@
 <template name="postpagesidebar">
 
 <div class="singlestuff">
-{{> UI.dynamic template=thumbnail}}
-<p><a href="/posts/{{_id}}">{{title}}</a> by {{authorName}}</p>
+
+    {{#if imageLink}}
+        <div class="imagethumb">
+     <a href="{{postLink}}" target="{{postTarget}}">   <img src="{{imageLink}}"></a>
+        </div>
+      {{/if}}
+  {{#if videoLink}}
+      <div class="popcornthumb">
+         <a href="{{postLink}}" target="{{postTarget}}">    <video id="thumbvideo">
+            <source src="{{videoLink}}" >
+          </video>
+          <div id="playbtn"></div>
+        </a>
+
+        </div>
+     {{/if}}
+<p><a href="/posts/{{_id}}">{{title}}</a> by {{authorName}} <br><span class="post-time"><i class="fa fa-clock-o"></i> {{ago}}</span></p>
 </div>
 
 </template>
