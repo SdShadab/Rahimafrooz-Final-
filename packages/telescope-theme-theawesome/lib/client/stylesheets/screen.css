@@ -6,22 +6,34 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
 }
+body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > p > span{
+	font-size: 32px;
+}
 body {
-	background: white !important;
+	background: white;
 	/*font-family: proxima;
 	font-weight: 650;*/
 }
 .hero {
 	background: url("/img/hero.png");
 	background-repeat: no-repeat;
-	width: 965px;
-height: 700px;
+	width: 956px;
+height: 670px;
 }
 #txt{
-	padding-top: 310px;
+	padding-top: 239px;
 padding-right: 300px;
 padding-left: 30px;
 font-size: 16px;
+color: transparent;
+}
+#bleh1 {
+	color:white;
+	padding-left: 30px;
+}
+#bleh2 {
+	color:white;
+	padding-left: 66px;
 }
 /*#overlay {
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -44,6 +56,7 @@ h3{
 	color:#4a4444;
 
 }
+
 #ourVideo{
 	width:100%;
 }
@@ -64,6 +77,9 @@ right: 56px;
 left: 63px;
 	text-align: center;
 
+}
+body > div > div.inner-wrapper.template-postslistTheAwesome > header{
+	margin-bottom: 5px;
 }
 #play {
     background: url("/img/main.png") center center no-repeat;
@@ -347,6 +363,8 @@ padding-bottom: 40px;
 -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
 }
+body > div > div.inner-wrapper.template-postslistTheAwesome {
+	}
 
 .posts.list {
   display:block;
@@ -435,7 +453,7 @@ display: block!important;
 	height:100%;
 }
 .search {
-	border: 1px solid rgba(255, 255, 255, 0.68);
+	border: 1px solid rgba(255, 255, 255, 0.35);
 border-radius: 20px;
 }
 @media screen and (max-width: 640px) {

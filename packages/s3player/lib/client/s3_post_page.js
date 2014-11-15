@@ -36,6 +36,21 @@ Template[getTemplate('s3PostPage')].helpers({
     }
     return 'user-avatar';
   },
+  profileUrl: function(){
+    // note: we don't want the post to be re-rendered every time user properties change
+    var user = Meteor.users.findOne(this.userId, {reactive: false});
+    if(user)
+      return getProfileUrl(user);
+  },
+  authorName: function(){
+    return getAuthorName(this);
+  },
+  sourceLink: function(){
+      return !!this.url ? this.url : getSiteUrl() + "posts/"+this._id;
+    },
+    viaTwitter: function () {
+      return !!getSetting('twitterAccount') ? 'via='+getSetting('twitterAccount') : '';
+    },
 
   url: function () {
     if (this.user) {
@@ -65,3 +80,15 @@ var pop = Popcorn.baseplayer($("#ourVideo"));
 pop.play();
 
 };
+
+  Template[getTemplate('s3PostPage')].events({
+    'click .share-link': function(e){
+      var $this = $(e.target).parents('.post-share').find('.share-link');
+      var $share = $this.parents('.post-share').find('.share-options');
+      e.preventDefault();
+      $('.share-link').not($this).removeClass("active");
+      $(".share-options").not($share).addClass("hidden");
+      $this.toggleClass("active");
+      $share.toggleClass("hidden");
+    }
+  });

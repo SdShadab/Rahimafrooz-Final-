@@ -23,17 +23,21 @@ background: rgba(233, 233, 233, 0.42);
 padding-top: 10px;
 margin-bottom: 5px;
 border-radius: 3px;
+padding-bottom: 7px;
 }
 
 .votes {
-	width: 140px;
+	width: 100px;
 float: right;
 padding: 10px;
+}
+.unit {
+	font-weight: bold;
 }
 
 .time {
 	width: 185px;
-float: left;
+float: right;
 padding: 13px;
 }
 
@@ -43,15 +47,19 @@ padding: 0px;
 }
 
 .theguy {
-	text-align: right;
+	text-align: left;
+	padding-left: 12px;
 }
 
 .post-time {
 	font-style: italic;
 }
 
-.button {
-	background: #5B89C0 !important;
+body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > div.bodystuff > div.post-body.markdown > p{
+	padding-left: 6px;
+}
+.share-crap{
+	padding-left: 35px;
 }
 
 .bodystuff {
@@ -78,4 +86,10 @@ b {
 border-bottom: 2px dotted grey;
 border-left: 2px dotted grey;
 padding-left: 10px;
+}
+body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div > div.bodystuff > div.imagestuff > a > img {
+	width: 100%;
+}
+#titlecrap {
+	padding-left:10px;
 }
