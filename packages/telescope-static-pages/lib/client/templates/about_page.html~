@@ -1,8 +1,30 @@
 <template name="morePage">
-  <div class="grid grid-module">
-    <h2>More Videos</h2><br>
-    <p>Lorem ipsum dolor sit amet. This app is made for rahimafrooz to view, share and discuss on posts and videos blha blah blah</p><br><br>
-   <iframe width="490" height="300" src="//www.youtube.com/embed/tmeOjFno6Do" frameborder="0" allowfullscreen></iframe><br>
-<iframe width="490" height="300" src="//www.youtube.com/embed/tmeOjFno6Do" frameborder="0" allowfullscreen></iframe>
-  </div>
+ 
+  <div id="txtcrap">  <h2>About The Campaign</h2><br>
+    <p id="intro">Have you ever thought that a small difference that you make today can someday become a legacy that you pass on?  Rahimafrooz has come up with a small initiative where we as individuals can come forward and voice out our ideas, stories and vision. <br>
+This is also a message from our group Managing Director that in order to truly win, we need to focus more on how we can bring a positive change in people’s lives.<br> 
+So what are you waiting for? <br>
+Step up and make a difference today.
+
+
+</p><br>
+
+<h2>The Differences Rahimafrooz Has Made So far:</h2></div><br>
+<table style="width:100%">
+<tr>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/7M--xmKI1jI?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/WFT6PmGLTd8?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/QbwMYHGI-cY?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/wPlXp3mvCc8?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+<tr>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/1t861wFcA08?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/YGosOjCEJH8?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/TWeD1r8mwQU?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+<td><iframe width="254" height="190" src="//www.youtube.com/embed/cLhvqvIQPj8?showinfo=0" frameborder="0" allowfullscreen></iframe></td>
+</tr>
+</table>
+<br><br>
+
+ 
 </template>

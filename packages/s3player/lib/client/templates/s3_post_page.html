@@ -17,7 +17,7 @@
         </a>
         </div>
      {{/if}}
- <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span><span style="text-transform:uppercase;font-weight:bold;background: #155ea0;color: white;border-radius: 5px;padding: 2px;font-size: 11px;">{{mifta}}</span></p>
+ <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span></p>
 	<p></p></div>
     
      <div class="theguy">
@@ -56,13 +56,12 @@
     {{> UI.dynamic template=comment_list}}
   </div>
 
-   {{#if categories}}
+
  <div class="sideshit" id="sidecrap">
- <h3 style="background: #e9e9e9;padding: 4px;color: #155ea0;">Related Posts</h3>
+ <h3 style="background: #e9e9e9;padding:14px;color: #155ea0;">Top Posts</h3>
   {{#each postca}}
    {{> UI.dynamic template=postpagesidebar}}
   {{/each}}
 </div>
-{{/if}}
 
 </template>

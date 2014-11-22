@@ -18,7 +18,7 @@
         </div>
      {{/if}}
  <div id="titlecrap">  <p><span class="title" style="font-size: 32px;line-height: 1.2;">{{title}} </span></p>
-	<p>{{mifta}}</p></div>
+	<p></p></div>
     
      <div class="theguy">
     <p><i class="fa fa-pencil"></i><a href="{{profileUrl}}"> <span class="author"> {{authorName}}</span></a></p>
@@ -35,8 +35,8 @@
      <div class="extrastuff">
 
      <div class="votes">
-      <span class="points">{{baseScore}} <span class="unit">{{pointsUnitDisplayText}} </span></span>
-     <!-- {{> UI.dynamic template=postVote}}-->
+     
+     {{> UI.dynamic template=postVote}}
       </div>
 
      
@@ -56,13 +56,12 @@
     {{> UI.dynamic template=comment_list}}
   </div>
 
-   {{#if categories}}
- <div class="sideshit">
- <h3>Related Posts</h3>
+
+ <div class="sideshit" id="sidecrap">
+ <h3 style="background: #e9e9e9;padding: 5px;color: #155ea0;">Top Posts</h3>
   {{#each postca}}
    {{> UI.dynamic template=postpagesidebar}}
   {{/each}}
 </div>
-{{/if}}
 
 </template>

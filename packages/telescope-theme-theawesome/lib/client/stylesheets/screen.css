@@ -29,8 +29,16 @@ height: 670px;
 	padding-right:35px;
 	
 }
+
+.nav > li > a, .nav > li > div > a {
+	font-size: 18px;
+}
 #intro {
-	font-size: 16px;
+	font-size: 17px;
+}
+#intro:first-letter {
+	font-size:30px;
+	color:#155ea0;
 }
 #txt{
 	padding-top: 208px;
@@ -98,7 +106,7 @@ body > div > div.inner-wrapper.template-postslistTheAwesome > header{
 }
 .template-morePage {
 	background: url("/img/newback.png") center center no-repeat;
-	background-size: 100% 100%;
+	
 	-webkit-transition: background 0.5s linear;
 -moz-transition: background 0.5s linear;
 -o-transition: background 0.5s linear;
@@ -302,11 +310,7 @@ float: none;
 .footer{
 	padding-bottom: 30px !important;
 }
-.user-avatar:hover {
-	-webkit-transition: all 0.2s linear;
-	opacity:0.5;
-	
-}
+
 .more-button {
 	background: #155ea0 !important;
 	color: white !important;
@@ -328,10 +332,10 @@ padding-bottom: 40px;
 	height:250px;
 	border-radius: 5px;
 }
-.comment-content .user-avatar img {
+/*.comment-content .user-avatar img {
 	width:70px;
 	height:40px;
-}
+}*/
 
 
 .post:visited {
@@ -421,6 +425,8 @@ body > div > div.inner-wrapper.template-postslistTheAwesome {
   display:block;
   box-sizing:border-box;
 }
+
+
 .posts.list > .post {
   width:calc(100%/3.3);
   height:375px;
@@ -433,6 +439,11 @@ body > div > div.inner-wrapper.template-postslistTheAwesome {
   display: inline-block;
 width: 306px;
 background:rgba(233, 233, 233, 0.42);
+/*for now*/
+border-bottom-color: rgba(21, 94, 160, 0.71);
+border-bottom-width: 5px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
 }
 .post {
 	background:rgba(233, 233, 233, 0.42) ;
@@ -483,17 +494,8 @@ body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div >
 .post-info{
   float: none;
 }
-.post-avatar  {
-  float: none;
 
-}
-.post-avatar img {
-  width: 110px !important;
-  height:110px!important;
-  vertical-align: middle;
-  margin-left: 62px;
-  border-radius: 100px;
-}
+
 .post .modules-group .inner {
 display: block!important;
 }
@@ -509,7 +511,7 @@ display: block!important;
 border-radius: 20px;
 }
 @media screen and (max-width: 640px) {
-  .posts.list > .post {
+/*  .posts.list > .post {
   width:330px;
  height:380px;
   padding-top:35px;
@@ -518,7 +520,7 @@ border-radius: 20px;
   float:left;
   box-sizing:border-box;
   display: inline-block;
-}
+}*/
 
 .post .right-modules, .post-actions.left-right.cell, .post-rank, .post-upvote {
   display:none;
@@ -565,8 +567,8 @@ left: 63px;
 
 }
 
- .posts.list > .post {
-  width:100%;
+ /*.posts.list > .post {
+
  height:380px;
   padding-top:35px;
   margin:8px;
@@ -574,12 +576,19 @@ left: 63px;
   float:left;
   box-sizing:border-box;
   display: inline-block;
-}
+}*/
 .search {
 border: 1px solid rgba(255, 255, 255, 0);}
 html, body {
   
     overflow-x: visible;
+}
+.post {
+	width: 100% !important;
+}
+.sideshit {
+	float:left !important;
+	width: 100% !important;
 }
 
 }
@@ -620,6 +629,10 @@ html, body {
        width: auto;
 	} 
 
+.sideshit {
+	float:left !important;
+	width: 100% !important;
+}
 
 	.featuredcontent {
 		float: none;
@@ -638,6 +651,9 @@ div.modules-group.center-modules > div > div.post-content.center-center.cell > d
 	.posts-list {
 		margin-left: 20px;
 	}
+	.template-postslistTheAwesome {
+	background:white;
+}
 
 	#categories {
 		width: 100%;
