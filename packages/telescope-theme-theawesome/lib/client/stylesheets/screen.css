@@ -19,8 +19,8 @@ body {
 .hero {
 	background: url("/img/heroes.png");
 	background-repeat: no-repeat;
-	width: 956px;
-height: 670px;
+	width: 100%;
+height: 100%;
 }
 
 #txtcrap {
@@ -243,10 +243,9 @@ width:180px;
 }
 
 .submitbutton {
-	margin-top: 20px;
-	margin-bottom: 40px;
-width: 1090px;
-
+	margin-bottom: 5%;
+width: 100%;
+padding-top: 40%;
 	text-align: left;
 margin-left: 35px;
 float: none;
@@ -490,6 +489,9 @@ body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div >
 }
 /*till here*/
 
+.onmobilevideos {
+	display: none;
+}
 
 .post-info{
   float: none;
@@ -510,6 +512,12 @@ display: block!important;
 	border: 1px solid rgba(255, 255, 255, 0.35);
 border-radius: 20px;
 }
+
+.about {
+	float: right;
+margin-right: 8%;
+}
+
 @media screen and (max-width: 640px) {
 /*  .posts.list > .post {
   width:330px;
@@ -521,6 +529,15 @@ border-radius: 20px;
   box-sizing:border-box;
   display: inline-block;
 }*/
+
+.onmobilevideos {
+	display: block;
+	text-align: center;
+}
+
+.ondesktopvideos {
+	display: none;
+}
 
 .post .right-modules, .post-actions.left-right.cell, .post-rank, .post-upvote {
   display:none;
@@ -535,6 +552,18 @@ border-radius: 20px;
 }
 .search {
 border: 1px solid rgba(255, 255, 255, 0);}
+
+.about {
+	float: none;
+}
+
+.submitbutton {
+	margin-left: 13%;
+}
+
+.header {
+	padding-left: 15px;
+}
 
 }
 
