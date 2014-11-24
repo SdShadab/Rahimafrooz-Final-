@@ -140,6 +140,14 @@ transition: background 0.5s linear;
     z-index: 10;
     opacity: 0.8;
 }
+#playbtn1 {
+	background: url("/img/main.png") center center no-repeat;
+    margin: -140px 36px 0 0;
+    height: 140px;
+    position: relative;
+    z-index: 10;
+    opacity: 0.8;
+}
 
 #imagethumb {
 	text-align: center;
@@ -203,6 +211,20 @@ p {
 	
 	-webkit-transition: all 0.2s linear;
 }
+
+body > div > div.inner-wrapper.template-postslistTheAwesome > header > ul > li:nth-child(3) > div > a:hover {
+		-webkit-transition: all 0.2s linear;
+		
+	background: transparent !important;
+	color:white !important;
+}
+body > div > div.inner-wrapper.template-postslistTheAwesome > div.content-wrapper > div.update-banner.grid-module.grid {
+	display: none;
+}
+.error {
+	background: #155ea0;
+}
+
 /* BODY CREAM*/
 
  div.modules-group.center-modules > div > div.post-content.center-center.cell > div > div > div:nth-child(2) {
@@ -214,6 +236,9 @@ p {
 	float: left;
 	position: relative !important;
 	display: inline;
+}
+#thumbvideo2 {
+	width: 90%;
 }
 /*.share-link {
 	top:40px;
@@ -493,6 +518,7 @@ body > div > div.inner-wrapper.template-s3PostPage > div.content-wrapper > div >
 	display: none;
 }
 
+
 .post-info{
   float: none;
 }
@@ -571,7 +597,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
 @media screen and (max-width: 470px) {
 #play {
     background: url("/img/PlayButton.png") center center no-repeat;
-    margin: -140px 10px 0 0;
+   margin: -139px 27px 0 0;
     height: 140px;
     position: relative;
     z-index: 10;
@@ -581,8 +607,8 @@ border: 1px solid rgba(255, 255, 255, 0);}
 	text-align: center;
 }
 #thumbvideo {
-width: 335px;
-height: 143px;
+width: 90%;
+
 }
  div.modules-group.center-modules{
  	text-align: center !important;
@@ -658,10 +684,7 @@ html, body {
        width: auto;
 	} 
 
-.sideshit {
-	float:left !important;
-	width: 100% !important;
-}
+
 
 	.featuredcontent {
 		float: none;
