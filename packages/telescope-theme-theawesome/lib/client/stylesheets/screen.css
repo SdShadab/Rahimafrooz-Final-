@@ -138,7 +138,8 @@ transition: background 0.5s linear;
     height: 140px;
     position: relative;
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.6
+   ;
 }
 #playbtn1 {
 	background: url("/img/main.png") center center no-repeat;
@@ -146,7 +147,7 @@ transition: background 0.5s linear;
     height: 140px;
     position: relative;
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 #imagethumb {
@@ -270,7 +271,7 @@ width:180px;
 .submitbutton {
 	margin-bottom: 5%;
 width: 100%;
-padding-top: 40%;
+padding-top: 35%;
 	text-align: left;
 margin-left: 35px;
 float: none;
@@ -323,6 +324,11 @@ float: none;
 	text-transform: uppercase;
 	-webkit-transition: all 0.3s linear;
 }
+.post .nothing {
+	border-left-color: #155ea0;
+	border-width: 3px;
+}
+
 
 #commentsStuff {
 	color:#155ea0 ;
@@ -601,7 +607,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
     height: 140px;
     position: relative;
     z-index: 10;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 #imagethumb {
 	text-align: center;
