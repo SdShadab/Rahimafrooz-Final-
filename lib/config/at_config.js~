@@ -23,19 +23,14 @@ AccountsTemplates.addField({
     trim: true,
     lowercase: true
 });
-//this is the restriction code:
 Accounts.config({
   restrictCreationByEmailDomain: function(email) {
     var domain = email.slice(email.lastIndexOf("@")+1); // or regex
     var allowed = ["rahimafrooz.com"];
- // document.getElementsByClassName("at-error").innerHTML = "rahimafrooz employees allowed";
-
+ 
     return _.contains(allowed, domain);
-}
+  }
 });
-
-//the above code ends here
-//still cant modify the error code
 AccountsTemplates.removeField('password');
 AccountsTemplates.addField({
     _id: 'password',
