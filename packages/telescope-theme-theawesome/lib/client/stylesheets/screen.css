@@ -475,6 +475,16 @@ border-bottom-width: 5px;
 border-bottom-right-radius: 6px;
 border-bottom-left-radius: 6px;
 }
+
+.posts.list > .imagepost {
+	border-bottom-color: black !important;
+}
+
+.posts.list > .videopost {
+	border-bottom-color: yellow !important;
+}
+
+
 .post {
 	background:rgba(233, 233, 233, 0.42) ;
 }

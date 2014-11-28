@@ -1,5 +1,5 @@
 <template name="post_item">
-   <div class="post {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}} {{color}}" id="{{_id}}">
+   <div class="post {{rankClass}} {{#if sticky}}sticky{{/if}} {{inactiveClass}} {{#if imageLink}} imagepost {{/if}} {{#if videoLink}} videopost {{/if}}" id="{{_id}}">
     <div class="modules-group left-modules">
       <div class="inner">
       {{#each leftPostModules}}

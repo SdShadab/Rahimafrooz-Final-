@@ -13,22 +13,6 @@ Template[getTemplate('post_item')].helpers({
   leftPostModules: function () {
     return filteredModules('left');
   },
-
-  color: function () {
-
-	if ( postObject.imageLink) {	
-	return 'imagepost';
-	}
-
-	else if( postObject.videoLink) {
-	return 'videopost';
-	}
-	
-	else {
-	return 'nothing';
-	}
-	
-  },
   centerPostModules: function () {
     return filteredModules('center');
   },
