@@ -105,8 +105,8 @@ body > div > div.inner-wrapper.template-postslistTheAwesome > header{
 	margin-bottom: 5px;
 }
 .template-morePage {
-	background: url("/img/newback.png") center center no-repeat;
-	
+	background: url("/img/newback.jpg") center center no-repeat;
+	background-size: 100% 100%;
 	-webkit-transition: background 0.5s linear;
 -moz-transition: background 0.5s linear;
 -o-transition: background 0.5s linear;
@@ -114,7 +114,7 @@ transition: background 0.5s linear;
 }
 
 .template-postslistTheAwesome {
-	background: url("/img/back.png") center center no-repeat;
+	background: url("/img/back.jpg") center center no-repeat;
 	background-size: 100% 100%;
 	-webkit-transition: background 0.5s linear;
 -moz-transition: background 0.5s linear;
@@ -477,11 +477,11 @@ border-bottom-left-radius: 6px;
 }
 
 .posts.list > .imagepost {
-	border-bottom-color: black !important;
+	border-bottom-color: #dd3333 !important;
 }
 
 .posts.list > .videopost {
-	border-bottom-color: yellow !important;
+	border-bottom-color: orange !important;
 }
 
 

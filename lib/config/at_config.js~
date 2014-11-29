@@ -4,6 +4,7 @@
 
 
 //Fields
+
 AccountsTemplates.addField({
     _id: "username",
     type: "text",
@@ -19,18 +20,27 @@ AccountsTemplates.addField({
     type: 'email',
     required: true,
     re: /.+@(.+){2,}\.(.+){2,}/,
-    errStr: 'error.accounts.Invalid email',
+    errStr: 'Only Rahimafrooz email IDs are valid',
     trim: true,
     lowercase: true
 });
+//this is the restriction code:
 Accounts.config({
   restrictCreationByEmailDomain: function(email) {
     var domain = email.slice(email.lastIndexOf("@")+1); // or regex
     var allowed = ["rahimafrooz.com"];
- 
+ // document.getElementsByClassName("at-error").innerHTML = "rahimafrooz employees allowed";
+ errStr: 'Only Rahimafrooz email IDs are valid'
     return _.contains(allowed, domain);
-  }
+},
+function(error){
+document.write("Only Rahimafrooz email IDs are valid");
+}
+
 });
+
+//the above code ends here
+//still cant modify the error code
 AccountsTemplates.removeField('password');
 AccountsTemplates.addField({
     _id: 'password',
