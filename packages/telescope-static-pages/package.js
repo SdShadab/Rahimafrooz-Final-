@@ -18,7 +18,9 @@ Package.onUse(function (api) {
 
   api.add_files([
     'lib/client/templates/about_page.html',
-  
+     'lib/client/templates/faq.html',
+    'lib/client/templates/faq_link.html',
+    'lib/client/faq.js',
     'lib/client/about.js'
   ], ['client']);
 

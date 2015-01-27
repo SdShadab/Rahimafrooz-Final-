@@ -578,8 +578,6 @@ margin-right: 8%;
 
 #faqlink{
 margin-left:10px;
-margin-top: 5px;
-margin-bottom: 5px;
 }
 
 .onmobilevideos {
