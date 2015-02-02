@@ -53,10 +53,10 @@ getSignupUrl = function(){
   return Meteor.absoluteUrl()+'sign-up';
 };
 getSigninUrl = function(){
-  return 'http://make-a-difference.rahimafrooz.com/'+'sign-in';
+  return 'http://make-a-difference.com/'+'sign-in';
 };
 getPostUrl = function(id){
-  return 'http://make-a-difference.rahimafrooz.com/'+'posts/'+id;
+  return 'http://make-a-difference.com/'+'posts/'+id;
 };
 getPostEditUrl = function(id){
   return Meteor.absoluteUrl()+'posts/'+id+'/edit';

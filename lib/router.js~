@@ -794,7 +794,7 @@ Meteor.startup(function () {
           profileUrl: getProfileUrl(user),
           username: getUserName(user),
           siteTitle: getSetting('title'),
-          siteUrl: getSiteUrl()
+          siteUrl: make-a-difference.rahimafrooz.com
         };
         html = Handlebars.templates[getTemplate('emailAccountApproved')](emailProperties);
         this.response.write(buildEmailTemplate(html));

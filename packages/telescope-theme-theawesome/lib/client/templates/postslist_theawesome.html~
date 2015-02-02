@@ -1,33 +1,27 @@
 <template name="postslistTheAwesome">
  {{> UI.dynamic template=postsListIncoming data=incoming}}
-  <div class="posts-wrapper grid grid-module">
   
-  <!-- New Stuff here -->
-<div class="abovePosts">
-  <div class="featuredcontent">
-  <h3>Are You Making A Difference?</h3>
-  <p>Have you ever thought that a small difference that you make today can someday become a legacy that you pass on? We may cease to exist but our thoughts and actions live on forever. All actions, no matter how big or small, have the power to touch the lives of others.
-This is why Rahimafrooz has come up with a small initiative where we as individuals can come forward and voice out our ideas, stories and vision. Even if we feel like we haven’t done anything to make a difference, there is a voice in all of us that wants to make a difference and wants to see a change. This is our chance to let that voice speak. Write a story, post a picture or video telling us how you have made a difference, what ideas you have that could bring a change or simply where would you want a change to be made? An idea gives birth to a change and small changes accumulate to make big differences. </p><br>
- <div id="morevid" align="middle">
-     <a href="/morevideos">{{i18n "VIEW MORE"}}</a>
-  </div>
-  </div>
+ 
 
-  <div class="featuredvideo">
-  <iframe width="500" height="375" src="//www.youtube.com/embed/qXBDr6uNprg" frameborder="0" allowfullscreen=""></iframe>
-  </div>
+  <div class="posts-wrapper grid grid-module">
 
-  <div class="convincingpara"><br>
-  <h3 style="color:#4a4444;text-transform:uppercase;">Difference starts with a thought or an action</h3><br>
-  </div>
+<div class="hero"> 
+  <br><br><h2 id="bleh1">YOU DONT NEED A UNIFORM</h2>
+<h2 id="bleh2">TO BE A <span style="font-size:35px;font-weight:bold;">HERO</span></h2>
 
   <div class="submitbutton">
-        <a href="/submit"><i class="fa fa-lightbulb-o"></i> {{i18n " SHARE YOUR STORY"}}</a>
+     
+      <a href="/submit" ><i class="fa fa-lightbulb-o"></i> {{i18n " SHARE YOUR STORY"}}</a>
+         <a href="/morevideos" class="about">{{i18n "ABOUT"}}</a>
+    
   </div>
+</div>
+
 
    <div id="categories">
-     <a href="/best">{{i18n "TOP"}}</a>
-    <a href="/new">{{i18n "NEW"}}</a>
+   
+     <a href="/best" >{{i18n "TOP POSTS"}}</a>
+    <a href="/new">{{i18n "NEW POSTS"}}</a>
   </div>
 
 </div>
@@ -37,7 +31,7 @@ This is why Rahimafrooz has come up with a small initiative where we as individu
         {{> UI.dynamic template=post_item}}
       {{/each}}
     </div>
-  </div>
+ 
   {{> UI.dynamic template=postsLoadMore}}
 
 </template>

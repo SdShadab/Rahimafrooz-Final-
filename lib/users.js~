@@ -42,13 +42,13 @@ getDisplayNameById = function(userId){
   return getDisplayName(Meteor.users.findOne(userId));
 };
 getProfileUrl = function(user) {
-  return 'http://make-a-difference.rahimafrooz.com/'+'users/' + slugify(getUserName(user));
+  return Meteor.absoluteUrl()+'users/' + slugify(getUserName(user));
 };
 getProfileUrlById = function(id){
-  return 'http://make-a-difference.rahimafrooz.com/'+'users/'+ id;
+  return Meteor.absoluteUrl()+'users/'+ id;
 };
 getProfileUrlBySlug = function(slug) {
-  return 'http://make-a-difference.rahimafrooz.com/'+'users/' + slug;
+  return Meteor.absoluteUrl()+'users/' + slug;
 };
 hasPassword = function(user) {
   return !!user.services.password;

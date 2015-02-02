@@ -2,6 +2,10 @@
   font-family: 'lato';
   src: url(/fonts/Lato-Regular.ttf);
 }
+@font-face {
+  font-family: 'roboto';
+  src: url(/fonts/roboto.ttf);
+}
 #faqstf h3{
 
 color: #155ea0;
@@ -21,7 +25,7 @@ body {
 	/*font-weight: 650;*/
 }
 .hero {
-	background: url("/img/heroes.png");
+	background: url("/img/heroes.jpg");
 	background-repeat: no-repeat;
 	width: 100%;
 height: 100%;
@@ -55,12 +59,26 @@ color: transparent;
 	color:white;
 	padding-left: 30px;
 	margin-bottom: -9px;
-	text-shadow: 3px 4px black;
+	
+	font-family:roboto;
 }
 #bleh2 {
+	font-family:roboto;
 	color:white;
-	padding-left: 30px;
-	text-shadow: 3px 4px black;
+	padding-left: 30px;	
+}
+.posts.list > .post:hover{
+background:white;
+-webkit-transition: all 0.3s linear;
+
+}
+
+body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div.grid.submit > form > div:nth-child(4){
+display:none;
+}
+
+.homemenu a{
+border-radius:7px !important;
 }
 /*#overlay {
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -99,7 +117,7 @@ div.modules-group.center-modules > div.inner > div.thumbnail.center-left.cell > 
 }
 .share-stuff {
 	position: absolute;
-top: 320px;
+top: 340px;
 right: 56px;
 left: 63px;
 	text-align: center;
@@ -163,7 +181,7 @@ transition: background 0.5s linear;
 }
 .header {
 height: 110px;
-background-image: url("/img/header.png") !important;
+background-image: url("/img/header.jpg") !important;
 margin-bottom: 40px;
 padding-left:54px;
 padding-right: 54px;
@@ -210,6 +228,10 @@ p {
 .mobile-nav {
 	background: #155ea0;
 }
+#ra{
+margin-top:14px;
+}
+
 .button:hover {
 	color:#155ea0;
 	background-color: white;
@@ -235,6 +257,9 @@ body > div > div.inner-wrapper.template-postslistTheAwesome > div.content-wrappe
  div.modules-group.center-modules > div > div.post-content.center-center.cell > div > div > div:nth-child(2) {
  	display: none !important;
  }
+/*body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div.grid.submit > form > div:nth-child(4){
+  display:none !important;
+}*/
 
 /**/
 .logo {
@@ -459,11 +484,21 @@ body > div > div.inner-wrapper.template-postslistTheAwesome {
   display:block;
   box-sizing:border-box;
 }
-
-
+body > div > div.inner-wrapper.template-postslistTheAwesome > header > ul{
+right:10%;
+}
+body > div > div.inner-wrapper.template-postVideoSubmit > header > ul{
+right:10%;
+}
+.header ul{
+right:10%;
+}
+.header{
+font-size:2px !important;
+}
 .posts.list > .post {
   width:calc(100%/3.3);
-  height:375px;
+  height:398px;
   padding-top:45px;
   padding:25px;
   margin:8px;
@@ -575,11 +610,19 @@ margin-right: 8%;
   box-sizing:border-box;
   display: inline-block;
 }*/
-
+#homemenu a{
+padding-left:40% !important;
+}
 #faqlink{
 margin-left:10px;
+margin-top: 5px;
+margin-bottom: 5px;
 }
-
+#login,#register{
+padding-left: 10px !important;
+padding-top: 5px !important;
+margin-bottom: 5px !important;
+}
 .onmobilevideos {
 	display: block;
 	text-align: center;
@@ -627,6 +670,20 @@ border: 1px solid rgba(255, 255, 255, 0);}
     z-index: 10;
     opacity: 0.6;
 }
+
+body > div > div.inner-wrapper.template-faq{
+background:white;
+}
+
+#login,#register{
+padding-left: 10px !important;
+padding-top: 5px !important;
+margin-bottom: 5px !important;
+}
+
+#homemenu a{
+padding-left:40% !important;
+}
 #imagethumb {
 	text-align: center;
 }
@@ -639,7 +696,7 @@ width: 90%;
  }
 .share-stuff {
 	position: absolute;
-top: 300px;
+top: 340px;
 right: 56px;
 left: 63px;
 	text-align: center;
@@ -682,9 +739,12 @@ html, body {
 	max-width: 1000px;
 	
 }
+body > div > div.inner-wrapper.template-faq{
+background:white;
+}
 
 	.header {
-		background-image: url("/img/header.png") !important;
+		background-image: url("/img/header.jpg") !important;
 		height: 110px;
 		box-shadow: -12px 2px 7px rgba(0, 0, 0, 0.92);
 	}
@@ -748,10 +808,25 @@ border: 1px solid rgba(255, 255, 255, 0);}
 		float: none;
 	}
 	.header {
-		background-image: url("/img/header.png") !important;
+		background-image: url("/img/header.jpg") !important;
 		
 	} /*ffd04d*/
 
 	/* Add Mobile Orange Menu Button code here */
 
+}
+
+
+/*FACEbook and twitter login*/
+body > div > div.inner-wrapper.template-fullPageAtForm > div.content-wrapper > div > div.at-oauth{
+	display: none;
+}
+body > div > div.inner-wrapper.template-fullPageAtForm > div.content-wrapper > div > div.at-sep{
+	display: none;
+}
+body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div > div.at-oauth{
+display: none;
+}
+body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div > div.at-sep{
+display: none;
 }
