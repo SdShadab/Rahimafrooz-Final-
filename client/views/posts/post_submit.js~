@@ -25,15 +25,19 @@ Template[getTemplate('post_submit')].helpers({
   },
   //This should be working.
   dropzonejs: function() {
-    var dropzone = '<form id="my-awesome-dropzone" action="/" class="dropzone"><input type="hidden" value="" name="S3" id="s3Url"></form>';
-     Dropzone.options.myAwesomeDropzone = { maxFilesize: 10, autoProcessQueue: true, init: function(){
+    var dropzone = '<form id="my-awesome-dropzone" action="/" class="dropzone"><input type="hidden" value="" name="S3" id="s3VideoUrl"><input type="hidden" value="" name="S3" id="s3ImageUrl"></form>';
+     Dropzone.options.myAwesomeDropzone = { maxFilesize: 30, autoProcessQueue: true, init: function(){
                         this.on("sending", function(file) {
                             console.log(file.name);
                             var extension = file.name.split('.').pop();
                             var s3 = new AWS.S3(options = {accessKeyId: "AKIAJ4SISOHP5EFRHNWA", secretAccessKey: "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"});
                             var fileName = file.name;
                             var fileUrl = fileName.split(".",1)+Meteor.userId();
-                            var s3Url = "http://bwvids.s3.amazonaws.com/"+fileUrl+'.'+extension;
+                            if(extension=='mp4'){
+                            var s3VideoUrl = "http://bwvids.s3.amazonaws.com/"+fileUrl+'.'+extension;}
+                          else{
+                            var s3ImageUrl= "http://bwvids.s3.amazonaws.com/"+fileUrl+'.'+extension;}
+
                             var params = {
                                 Bucket: 'bwvids', /* required */
                                 Key: fileUrl+'.'+extension, /* required */
@@ -41,16 +45,17 @@ Template[getTemplate('post_submit')].helpers({
                                 Body: file,
                                 };
                         s3.putObject(params, function(err, data) {
-                          if (err) console.log(err, err.stack); // an error occurred
-                          else if (data)
+                          if (err) 
+                          console.log(err, err.stack); // an error occurred
+                          else if (data){
 
-                              //console.log(s3Url);
-                              $('#s3Url').val(s3Url);
-                              console.log($('#s3Url').val());
-
-                            
-                          }         // successful response
-                        );
+     
+      		$('#s3VideoUrl').val(s3VideoUrl);
+       
+				$('#s3ImageUrl').val(s3ImageUrl);                  
+                    } 
+              }        // successful response
+  );
                })
                          
           }};
@@ -107,7 +112,8 @@ Template[getTemplate('post_submit')].events({
       sticky: $('#sticky').is(':checked'),
       userId: $('#postUser').val(),
       status: parseInt($('input[name=status]:checked').val()),
-      videoLink: $('#s3Url').val()
+      videoLink: $('#s3VideoUrl').val(),
+      imageLink: $('#s3ImageUrl').val()
     };
 
     // PostedAt

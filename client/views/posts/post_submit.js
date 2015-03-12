@@ -26,7 +26,7 @@ Template[getTemplate('post_submit')].helpers({
   //This should be working.
   dropzonejs: function() {
     var dropzone = '<form id="my-awesome-dropzone" action="/" class="dropzone"><input type="hidden" value="" name="S3" id="s3VideoUrl"><input type="hidden" value="" name="S3" id="s3ImageUrl"></form>';
-     Dropzone.options.myAwesomeDropzone = { maxFilesize: 10, autoProcessQueue: true, init: function(){
+     Dropzone.options.myAwesomeDropzone = { maxFilesize: 30, autoProcessQueue: true, init: function(){
                         this.on("sending", function(file) {
                             console.log(file.name);
                             var extension = file.name.split('.').pop();
