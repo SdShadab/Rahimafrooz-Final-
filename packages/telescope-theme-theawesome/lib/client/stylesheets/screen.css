@@ -117,7 +117,7 @@ div.modules-group.center-modules > div.inner > div.thumbnail.center-left.cell > 
 }
 .share-stuff {
 	position: absolute;
-top: 340px;
+top: 354px;
 right: 56px;
 left: 63px;
 	text-align: center;
@@ -156,7 +156,7 @@ transition: background 0.5s linear;
 }
 #playbtn {
 	background: url("/img/main.png") center center no-repeat;
-    margin: -140px 60px 0 0;
+    margin: -145px 60px 0 0;
     height: 140px;
     position: relative;
     z-index: 10;
@@ -498,7 +498,7 @@ font-size:2px !important;
 }
 .posts.list > .post {
   width:calc(100%/3.3);
-  height:398px;
+  height:400px;
   padding-top:45px;
   padding:25px;
   margin:8px;
@@ -702,7 +702,7 @@ width: 90%;
  }
 .share-stuff {
 	position: absolute;
-top: 340px;
+top: 354px;
 right: 56px;
 left: 63px;
 	text-align: center;
@@ -823,7 +823,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
 }
 
 
-/*FACEbook and twitter login*/
+/*FACEbook and twitter login
 body > div > div.inner-wrapper.template-fullPageAtForm > div.content-wrapper > div > div.at-oauth{
 	display: none;
 }
@@ -835,4 +835,4 @@ display: none;
 }
 body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div > div.at-sep{
 display: none;
-}
+}*/

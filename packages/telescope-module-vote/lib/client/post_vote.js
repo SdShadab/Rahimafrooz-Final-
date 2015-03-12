@@ -7,7 +7,11 @@ Template[getTemplate('postVote')].helpers({
   oneBasedRank: function(){
     if(typeof this.rank !== 'undefined')
       return this.rank + 1;
-  }
+  },
+isAdmin:function (user){
+  user = (typeof user === 'undefined') ? Meteor.user() : user;
+  return !!user && !!user.isAdmin;
+}
 });
  Template[getTemplate('postVote')].helpers({
     sourceLink: function(){

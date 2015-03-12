@@ -1,6 +1,12 @@
 Template[getTemplate('postsmetaTheAwesome')].helpers({
  
-  getTemplate: function () {
-    return getTemplate(this.template);
-  }
+  postCommentsLink: function () {
+    return getTemplate('postCommentsLink');
+  },
+isAdmin:function (user){
+  user = (typeof user === 'undefined') ? Meteor.user() : user;
+  return !!user && !!user.isAdmin;
+} 
 });
+
+

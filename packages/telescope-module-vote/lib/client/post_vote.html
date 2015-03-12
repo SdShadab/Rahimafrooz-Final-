@@ -5,5 +5,7 @@
   {{else}}
     <a class="upvote-link not-voted" href="#" title="Upvote"><i class="fa fa-thumbs-up "></i><span>{{i18n " Upvote "}}</span></a>
   {{/if}}
- 
+   {{#if isAdmin}}
+   | <a href="/posts/{{_id}}/edit" ><i class="fa fa-pencil-square-o"></i> Edit</a>
+    {{/if}}
 </template>

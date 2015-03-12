@@ -58,9 +58,6 @@ padding: 0px;
 width:90%;
 height:150px;
 }
-#thumbvideo2{
-height:150px;
-}
 body > div > div.inner-wrapper.template-settings > div.content-wrapper > div.update-banner.grid-module.grid {
 	display: none;
 }
