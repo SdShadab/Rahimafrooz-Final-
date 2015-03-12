@@ -27,7 +27,7 @@ body {
 .hero {
 	background: url("/img/heroes.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 97%;
 height: 100%;
 }
 
@@ -610,6 +610,15 @@ margin-right: 8%;
   box-sizing:border-box;
   display: inline-block;
 }*/
+#rewards ul li{
+display:block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+width: 50% !important;
+}
+#rewards img{
+width:200px !important;
+}
 #homemenu a{
 padding-left:40% !important;
 }
@@ -749,6 +758,7 @@ body > div > div.inner-wrapper.template-faq{
 background:white;
 }
 
+
 	.header {
 		background-image: url("/img/header.jpg") !important;
 		height: 110px;
@@ -825,19 +835,13 @@ border: 1px solid rgba(255, 255, 255, 0);}
 	list-style-type: none;
 	display: inline;
 }
-#rewards h3{
+#head{
  text-align: center;
- border: 2px solid #155ea0;
-        border-radius: 5px;
-		padding-top: 1%;
-		padding-bottom: 1%;
-		padding-left: 2%;
-		padding-right: 2%;
-		background: #155ea0;
-		color: white;
+
 }
 #rewards img{
 	width: 24%;
+	height: 170px;
 }
 
 /*FACEbook and twitter login

@@ -27,7 +27,7 @@ body {
 .hero {
 	background: url("/img/heroes.jpg");
 	background-repeat: no-repeat;
-	width: 100%;
+	width: 97%;
 height: 100%;
 }
 
@@ -748,6 +748,15 @@ html, body {
 body > div > div.inner-wrapper.template-faq{
 background:white;
 }
+#rewards ul li{
+display:block;
+margin-left: auto;
+margin-right: auto;
+width: 60%;
+}
+#rewards img{
+width:250px;
+}
 
 	.header {
 		background-image: url("/img/header.jpg") !important;
@@ -821,9 +830,19 @@ border: 1px solid rgba(255, 255, 255, 0);}
 	/* Add Mobile Orange Menu Button code here */
 
 }
+#rewards ul li{
+	list-style-type: none;
+	display: inline;
+}
+#head{
+ text-align: center;
 
+}
+#rewards img{
+	width: 24%;
+}
 
-/*FACEbook and twitter login*/
+/*FACEbook and twitter login
 body > div > div.inner-wrapper.template-fullPageAtForm > div.content-wrapper > div > div.at-oauth{
 	display: none;
 }
@@ -835,4 +854,4 @@ display: none;
 }
 body > div > div.inner-wrapper.template-postVideoSubmit > div.content-wrapper > div > div.at-sep{
 display: none;
-}
+}*/
