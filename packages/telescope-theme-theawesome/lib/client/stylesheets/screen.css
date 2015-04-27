@@ -6,10 +6,16 @@
   font-family: 'roboto';
   src: url(/fonts/roboto.ttf);
 }
+.orbit-container{
+width:97% !important;
+}
 #faqstf h3{
 
 color: #155ea0;
 font-weight:normal;
+}
+.orbit-bullets{
+display:none;
 }
 html, body {
     max-width: 100%;

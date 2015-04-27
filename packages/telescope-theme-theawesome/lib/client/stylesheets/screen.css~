@@ -6,10 +6,16 @@
   font-family: 'roboto';
   src: url(/fonts/roboto.ttf);
 }
+.orbit-container{
+width:97% !important;
+}
 #faqstf h3{
 
 color: #155ea0;
 font-weight:normal;
+}
+.orbit-bullets{
+display:none;
 }
 html, body {
     max-width: 100%;
@@ -610,6 +616,15 @@ margin-right: 8%;
   box-sizing:border-box;
   display: inline-block;
 }*/
+#rewards ul li{
+display:block !important;
+margin-left: auto !important;
+margin-right: auto !important;
+width: 50% !important;
+}
+#rewards img{
+width:200px !important;
+}
 #homemenu a{
 padding-left:40% !important;
 }
@@ -748,15 +763,7 @@ html, body {
 body > div > div.inner-wrapper.template-faq{
 background:white;
 }
-#rewards ul li{
-display:block;
-margin-left: auto;
-margin-right: auto;
-width: 60%;
-}
-#rewards img{
-width:250px;
-}
+
 
 	.header {
 		background-image: url("/img/header.jpg") !important;
@@ -840,6 +847,7 @@ border: 1px solid rgba(255, 255, 255, 0);}
 }
 #rewards img{
 	width: 24%;
+	height: 170px;
 }
 
 /*FACEbook and twitter login
