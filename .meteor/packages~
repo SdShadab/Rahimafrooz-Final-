@@ -61,6 +61,9 @@ telescope-email
 telescope-update-prompt
 telescope-notifications
 telescope-kadira
+telescope-update-prompt
+telescope-notifications
+telescope-kadira
 
 # Accounts Templates
 service-configuration
@@ -85,4 +88,3 @@ gadicohen:phantomjs
 gadicohen:spiderable-remote
 manuelschoebel:ms-seo
 
-ewall:foundation
